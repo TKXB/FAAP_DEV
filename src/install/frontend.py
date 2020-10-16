@@ -127,7 +127,7 @@ def _install_css_and_js_files():
 
         if not Path('web_css/fontawesome').exists():
             wget_static_web_content(
-                'https://use.fontawesome.com/releases/v5.13.0/fontawesome-free-5.13.0-web.zip',
+                'https://github.com/FortAwesome/Font-Awesome/releases/download/5.13.0/fontawesome-free-5.13.0-web.zip',
                 '.',
                 [
                     'unzip fontawesome-free-5.13.0-web.zip',

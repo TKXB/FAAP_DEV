@@ -28,6 +28,7 @@ def get_cve_links(url: str, selected_years: Optional[List[int]] = None) -> List[
 
 def process_url(download_url: str, path: str):
     try:
+        print("download url is: ", download_url)
         request = requests.get(download_url, allow_redirects=True)
     except requests.exceptions.RequestException:
         raise CveLookupException('URLs are invalid. URL format might have been changed or website might have moved.')
